@@ -20,10 +20,10 @@ depool.ini - address of the DePool y'd like to stake TONs.
 
 
 # To get started:
-1. Download archive FreeTONSO.zip
-2. Unzip it in any folder on your PC, go to this folder and run freetonso.cmd file.
+1. Download archive file FreeTONSO.zip or clone this repo.
+2. Unzip FreeTONSO.zip in any folder on your PC, go to this folder and run freetonso.cmd file.
 3. To select a function enter its number and press ‘Enter’ or ‘q’ to exit.
-4. FreeTONSO tools works only if freetonso.cmd started in the folder it unzipped. Do not start it directly from the .zip file.
+4. FreeTONSO tools works correct only if freetonso.cmd started in the folder it unzipped. Do not start it directly from the .zip file.
 
 
 # FreeTONSO functions description:
