@@ -26,15 +26,25 @@ depool.ini - address of the DePool y'd like to stake TONs.
 2 - Generate msig.keys.json file
 
 3 - Change the sign method
+
 4 - Show wallet balance and stakes
+
 5 - Send Tokens
+
 6 - Get transaction to sign
+
 7 - Sign the transaction
+
 8 - Stake to DePool
+
 9 - Withdraw entire Stake from DePool
+
 10 - Withdraw part of Stake from DePool
+
 11 - Remove stake from DePool
+
 12 - Cancel all Withdrawals
+
 13 - DePool Address
 
 
@@ -215,3 +225,5 @@ DePool: 0:0000000dead8e176b391df7e6d79e3cf52fa8dbcd457a88220507dde8f6676fe
 Press any key to continue …
 
 It means that you have staked in depool! Hurray!
+
+See ya in Cyberspace!
