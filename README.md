@@ -21,9 +21,8 @@ depool.ini - address of the DePool y'd like to stake TONs.
 
 
 # FreeTONSO functions description:
-1 - My wallet address
-
-2 - Generate msig.keys.json file
+1. My wallet address
+2. Generate msig.keys.json file
 
 3 - Change the sign method
 
