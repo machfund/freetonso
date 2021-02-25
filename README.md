@@ -1,53 +1,47 @@
 # Free TON Simple Operations
 
 # What is it? 
-Windows BATCH based tool for the simplest interaction with Free TON blockchain. Tested on Windows 8/10 and Windows 7 SP1 with updates: KB3087873, KB2990941.
+Thi is the Windows BATCH based tool for the simplest interaction with Free TON blockchain. Tested on Windows 8/10 and Windows 7 SP1 with updates: KB3087873, KB2990941.
 
 
 This bundle (FreeTONSO.zip) contains:
 tonoscli.exe - official tonos-cli ver. 0.6.2 built from official repository source codes (https://github.com/tonlabs/tonos-cli) for Windows systems.
+
 freetonso.cmd - open source batch script supplied with a convenient menu which helps you to execute more than 12 different tasks.
+
 hex2dec.cmd - script converter integer value from hex to decimal. For older tonos-cli versions.
+
 nano2ton.cmd - script converter nanoton (1^9) into ton.
+
 depool.ini - address of the DePool y'd like to stake TONs.
+
 *.abi.json - official ABI json files for correct interaction with smartcontracts.
 
 
 # To get started:
-1. Download archive FreeTONSO.zip
-2. Unzip it in any folder on your PC, go to this folder and run freetonso.cmd file.
-3. FreeTONSO tools works only if freetonso.cmd started in the folder it unzipped. Do not start it directly from the .zip file.
-5. To select a function enter its number and press ‘Enter’ or ‘q’ to exit.
+Step 1. Download archive FreeTONSO.zip
+Step 2. Unzip it in any folder on your PC, go to this folder and run freetonso.cmd file.
+Step 3. To select a function enter its number and press ‘Enter’ or ‘q’ to exit.
+Note: FreeTONSO tools works only if freetonso.cmd started in the folder it unzipped. Do not start it directly from the .zip file.
 
 
 # FreeTONSO functions description:
 1. My wallet address
 2. Generate msig.keys.json file
-
-3 - Change the sign method
-
-4 - Show wallet balance and stakes
-
-5 - Send Tokens
-
-6 - Get transaction to sign
-
-7 - Sign the transaction
-
-8 - Stake to DePool
-
-9 - Withdraw entire Stake from DePool
-
-10 - Withdraw part of Stake from DePool
-
-11 - Remove stake from DePool
-
-12 - Cancel all Withdrawals
-
-13 - DePool Address
+3. Change the sign method
+4. Show wallet balance and stakes
+5. Send Tokens
+6. Get transaction to sign
+7. Sign the transaction
+8. Stake to DePool
+9. Withdraw entire Stake from DePool
+10. Withdraw part of Stake from DePool
+11. Remove stake from DePool
+12. Cancel all Withdrawals
+13. DePool Address
 
 
-# 1 - My wallet address
+# 1. My wallet address
 Allows you to enter your wallet address and save it to a file. Without a wallet address, all functions do not work.
 
 Steps: 
@@ -58,7 +52,7 @@ Result:
   Wallet address is saved to the addr.ini file in the current folder.
 
 
-# 2 - Generate msig.keys.json file 
+# 2. Generate msig.keys.json file 
 This function allows you to generate a PUBLIC/PRIVATE key pair into the msig.keys.json file and save it to disk. This can be useful to avoid using the seed phrase every time you need to sign a transaction. Works with all types of multisig wallets (relevant for initial members of SG’s, co-owners of depools, and other msig Users).
 
 Steps:
@@ -69,7 +63,7 @@ Result:
   You have just generated the msig.keys.json, which means that you no longer need a seed phrase to use the FreeTONSO functions (this is legal and allowed by the Free TON network). 
 
 
-# 3 - Change the sign method
+# 3. Change the sign method
 This function allows you to change the way a transaction is signed. For example, after msig.keys.json is generated.
 
 Steps: 
@@ -80,7 +74,7 @@ Result:
   Preferred signing method changed. 
 
 
-# 4 - Show wallet balance and stakes
+# 4. Show wallet balance and stakes
 This function gathers wallet balance, stakes and rewards data at the current time.
 
 Steps:
@@ -90,7 +84,7 @@ Result:
 	You see the actual balance in TON Crystals of the wallet, the  address of DePool, the stake amount and its reward. 
 
 
-# 5 - Send Tokens 
+# 5. Send Tokens 
 This feature allows you to send TON Crystals to another wallet. It also means you can create transactions for multi-custodians multisig wallets and sign them later.
 
 Steps:
@@ -102,7 +96,7 @@ Steps:
   You will see amount in nanotons (N^9), that is okay. Verify your transaction info and press Enter
 
 
-# 6 - Get transaction to sign
+# 6. Get transaction to sign
 If you use a multisig wallet with more than one custodians (owner) and signature request more than one, your colleague can create a transaction which you need to sign. 
 To get a transaction ID of that transaction (to sign it) use this function.
 
@@ -113,7 +107,7 @@ Result:
 	Transaction ID like “0x601a8b0545e74341”
 
 
-# 7 - Sign the transaction 
+# 7. Sign the transaction 
 This function allows you to sign the transaction. At first you need to get transaction id with #6 option or any other way
 
 Steps:
@@ -125,7 +119,7 @@ Result:
   Transaction signed on. If you request function #6 again you will see signsReceived field’s value has been increased by 1.
 
 
-# 8 - Stake to DePool
+# 8. Stake to DePool
 Use this function to stake your TON Crystals to Freetone.one DePool.
 
 Steps: 
@@ -137,7 +131,7 @@ Results:
 	You will see the “Succeed” status of the transaction.
 
 
-# 9 - Withdraw entire Stake from DePool
+# 9. Withdraw entire Stake from DePool
  This function allows you to withdraw the entire Stake and its rewards from DePool. It can take a while because your stake can be “busy” in the current validation cycle and should wait until blockchain elections. The maximum withdrawal time can be up to 36 hours. 
 
 Steps: 
@@ -148,7 +142,7 @@ Results:
 	After a while check your wallet balance.
 
 
-# 10 - Withdraw part of Stake from DePool
+# 10. Withdraw part of Stake from DePool
 This function allows you to withdraw a part of your Stake from DePool. It can take a while because your stake can be “busy” in the current validation cycle and should wait until blockchain elections. The maximum withdrawal time can be up to 36 hours. 
 
 Steps: 
@@ -160,7 +154,7 @@ Results:
 	After a while check your wallet balance. 
 
 
-# 11 - Remove stake from DePool
+# 11. Remove stake from DePool
 This feature allows you to cancel a Stake into DePool and return it back to your wallet if, for example, you change your mind. 
 
 You are able to do it only before your stake goes to validation cycle. To get your stake back with rewards use withdrawal functions #9 and #10. 
@@ -169,7 +163,7 @@ Steps:
   Press 11, then press Enter
 
 
-# 12 - Cancel all Withdrawals 
+# 12. Cancel all Withdrawals 
 
 The title speaks for itself - you can cancel all the withdrawals (entire or part) you made before. This operation will only be successful if the DePool has not already returned your Stake back to your wallet.
 
