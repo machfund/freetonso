@@ -36,7 +36,7 @@ depool.ini - address of the DePool y'd like to stake TONs.
 13 - DePool Address
 
 
-1 - My wallet address 
+1 - My wallet address
 Allows you to enter your wallet address and save it to a file. Without a wallet address, all functions do not work.
 
 Steps: 
