@@ -219,11 +219,15 @@ STEP 3:
 
 
 Addr:
+
 0:0sdf0…
+
  Balance: xxx
 
 DePool: 0:0000000dead8e176b391df7e6d79e3cf52fa8dbcd457a88220507dde8f6676fe
+
  Stake: yyy
+ 
  Rewards: zzz
 
 Press any key to continue …
