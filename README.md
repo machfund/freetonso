@@ -1,8 +1,9 @@
 # Free TON Simple Operations
 
 # What is it? 
-This is the Windows batch-script based tool for the simplest interaction with Free TON blockchain. Tested on Windows 8/10 and Windows 7 SP1 with updates: KB3087873, KB2990941.
+This is the Windows batch-script based tool for the simplest interaction with Free TON blockchain including Staking feature. Tested on Windows 8/10 and Windows 7 SP1 with updates: KB3087873, KB2990941.
 
+# For Staking see the STAKING Shortcut section.
 
 # This bundle (FreeTONSO.zip) contains:
 
@@ -169,7 +170,7 @@ Steps:
 The title speaks for itself - you can cancel all the withdrawals (entire or part) you made before. This operation will only be successful if the DePool has not already returned your Stake back to your wallet.
 
 
-# 13 - DePool Address
+# 13. DePool Address
 Allows you to specify DePool address and save it to the depool.ini file.
 
 Steps:
@@ -179,11 +180,11 @@ Steps:
 
 
 
-# TRICKS and TIPS: 
+# TRICKS and TIPS 
 When you enter a seed phrase use space between words. Do not place space before/after the last word of the seed phrase. 
 
 
-# STAKING Shortcut:
+# STAKING Shortcut
 
 STEP 1:
 
