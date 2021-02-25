@@ -218,9 +218,7 @@ STEP 3:
 3. You will see the following info:
 
 
-Addr:
-
-0:0sdf0…
+Addr: 0:0sdf0…
 
  Balance: xxx
 
