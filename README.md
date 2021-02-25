@@ -216,6 +216,8 @@ STEP 3:
 1. Make it in couple of minutes after step 2 to be sure, that everything in blockchain.
 2. Type "4", then press enter. This will select item  4  - Show wallet balance and stakes.
 3. You will see the following info:
+
+
 Addr:
 0:0sdf0…
  Balance: xxx
