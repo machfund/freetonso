@@ -3,7 +3,7 @@
 # What is it? 
 This is the Windows batch-script based tool for the simplest interaction with Free TON blockchain including Staking feature. Tested on Windows 8/10 and Windows 7 SP1 with updates: KB3087873, KB2990941.
 
-# Staking
+# Staking:
 See the STAKING Shortcut section.
 
 # This bundle (FreeTONSO.zip) contains:
@@ -181,11 +181,11 @@ Steps:
 
 
 
-# TRICKS and TIPS 
+# TRICKS and TIPS:
 When you enter a seed phrase use space between words. Do not place space before/after the last word of the seed phrase. 
 
 
-# STAKING Shortcut
+# STAKING Shortcut:
 
 STEP 1:
 
