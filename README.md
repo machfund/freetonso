@@ -1,10 +1,10 @@
 # Free TON Simple Operations
 
 # What is it? 
-Thi is the Windows BATCH based tool for the simplest interaction with Free TON blockchain. Tested on Windows 8/10 and Windows 7 SP1 with updates: KB3087873, KB2990941.
+This is the Windows batch-script based tool for the simplest interaction with Free TON blockchain. Tested on Windows 8/10 and Windows 7 SP1 with updates: KB3087873, KB2990941.
 
 
-This bundle (FreeTONSO.zip) contains:
+# This bundle (FreeTONSO.zip) contains:
 
 tonoscli.exe - official tonos-cli ver. 0.6.2 built from official repository source codes (https://github.com/tonlabs/tonos-cli) for Windows systems.
 
