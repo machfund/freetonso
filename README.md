@@ -1,7 +1,8 @@
 # Free TON Simple Operations
 
-What is it? 
+# What is it? 
 Windows BATCH based tool for the simplest interaction with Free TON blockchain. Tested on Windows 8/10 and Windows 7 SP1 with updates: KB3087873, KB2990941.
+
 
 This bundle (FreeTONSO.zip) contains:
 tonoscli.exe - official tonos-cli ver. 0.6.2 built from official repository source codes (https://github.com/tonlabs/tonos-cli) for Windows systems.
@@ -11,14 +12,15 @@ nano2ton.cmd - script converter nanoton (1^9) into ton.
 depool.ini - address of the DePool y'd like to stake TONs.
 *.abi.json - official ABI json files for correct interaction with smartcontracts.
 
-To get started:
+
+# To get started:
 1. Download archive FreeTONSO.zip
 2. Unzip it in any folder on your PC, go to this folder and run freetonso.cmd file.
 3. FreeTONSO tools works only if freetonso.cmd started in the folder it unzipped. Do not start it directly from the .zip file.
 5. To select a function enter its number and press ‘Enter’ or ‘q’ to exit.
 
 
-FreeTONSO functions description:
+# FreeTONSO functions description:
 1 - My wallet address
 2 - Generate msig.keys.json file
 3 - Change the sign method
