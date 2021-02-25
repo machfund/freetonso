@@ -16,7 +16,7 @@ hex2dec.cmd - script converter integer value from hex to decimal. For older tono
 
 nano2ton.cmd - script converter nanoton (1^9) into ton.
 
-depool.ini - address of the DePool y'd like to stake TONs.
+depool.ini - address of the DePool to stake TONs. By default there is AxelFoly DePool: 0:0000000dead8e176b391df7e6d79e3cf52fa8dbcd457a88220507dde8f6676fe
 
 *.abi.json - official ABI json files for correct interaction with smartcontracts.
 
