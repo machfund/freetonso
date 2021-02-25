@@ -3,7 +3,8 @@
 Title Free TON Simple Operations 
 REM
 REM Just a simple script file for SubGovs and other who find it helpful :)
-REM Made in Cyberspace, 2020, December by Axel Foly - @axelfoly in Freeton.one
+REM by @axelfoly in Freeton.one
+REM 2020, December 
 REM 
 
 echo Loading...
@@ -112,6 +113,8 @@ goto MENU
 
 
 :DEPOOL_SETTINGS
+cls
+echo.
 echo Current DePool addr in %walletFile%: %DEPOOL%
 set /P NEWDEPOOL=Enter new DePool address:
 
@@ -129,6 +132,10 @@ goto MENU
 
 :GET_ACCOUNT
 CLS
+if not defined ADDR (
+	goto :MY_WALLET
+	)
+
 tonos-cli account %ADDR% | find "balance">account_balance.tmp
 for /f "tokens=2" %%G in (account_balance.tmp) do SET BALANCE=%%G
 for /f %%i in ("account_balance.tmp") do set size=%%~zi
@@ -174,17 +181,16 @@ if %size% gtr 0 (
 
 	for /f %%i in ("account_rewards.tmp") do set size=%%~zi
 	if %size% gtr 0 (
-
 		for /f "tokens=2" %%G in (account_rewards.tmp) do SET REWARDS=%%G
 		set REWARDS=!REWARDS:"=!
 		set REWARDS=!REWARDS:,=!
 
 		for /f %%# in ('nano2ton.cmd !REWARDS!') do set "REWARDS=%%#"
 		) else (
-		set REWARDS="0")
+		set REWARDS=0)
 
 	) else (
-	set STAKE="0"
+	set STAKE=0
 	)
 
 echo DePool: %DEPOOL%
@@ -204,6 +210,9 @@ set DEST=
 set VALUE=
 set SEED=
 cls
+if not defined ADDR (
+	goto :MY_WALLET
+	)
 echo. 
 set /P DEST=Enter destination address:
 
@@ -301,21 +310,19 @@ goto MENU
 
 :GET_TRANSACTIONS
 echo Processing...
-if "%ADDR%"=="" (goto :MY_WALLET)
-tonos-cli run %ADDR% getTransactions {} --abi SafeMultisigWallet.abi.json 2>nul | find "[]">get_transactions.tmp
-
-for /f %%i in ("get_transactions.tmp") do set size=%%~zi
-if %size% gtr 0 (
-	
-    REM echo Описать здесь очистку результата и по пустым скобкам выяснить - есть ли транзакции или нет. Если нет, то выполняем ещё одну команду для вывода всех транзакций
+if not defined ADDR (
+	goto :MY_WALLET
 	)
-
+tonos-cli run %ADDR% getTransactions {} --abi SafeMultisigWallet.abi.json
 
 pause
 goto MENU
 
 
 :SIGN_TRANSACTION
+if not defined ADDR (
+	goto :MY_WALLET
+	)
 set /P TRANSACTION=Enter transaction ID:
 if "%SIGN_METHOD%"=="seedphrase" (
 	echo.
@@ -336,14 +343,22 @@ goto MENU
 
 
 :STAKE_TO_DEPOOL
+if not defined ADDR (
+	goto :MY_WALLET
+	)
+if not defined DEPOOL (
+	goto :DEPOOL_SETTINGS
+	)
 echo DePool: %DEPOOL%
-echo Wallet: %ADDR% 
+echo Wallet: %ADDR%
 set /P VALUE=Enter value in tokens:
 echo Value: !VALUE!
 
 if "%SIGN_METHOD%"=="seedphrase" (
 	echo.
+	:STAKE_TO_DEPOOL_ENTER_SEED
 	set /P SEED=Enter the seed phrase:
+	if "!SEED!"=="" (goto STAKE_TO_DEPOOL_ENTER_SEED)
 	echo.
 	set SIGNATURE="!SEED!"
 	) else (
