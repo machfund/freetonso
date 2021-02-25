@@ -186,28 +186,36 @@ When you enter a seed phrase use space between words. Do not place space before/
 # STAKING Shortcut:
 
 STEP 1:
-Type 1. Press enter. This will select item 1 - My wallet address. 
-Type (or paste) the address (wallet) with tokens you want to stake, i.e. 0:0sdf0…. Press enter. This will save your address.
-After the address saved - press any key.
-If you are on the “home screen” of the app and see your address in item 1 - My wallet address (0:0sdf0…) - everything is ok.
+
+1. Type "1", then press enter. This will select item 1 - My wallet address. 
+2. Type (or paste) the address (wallet) with tokens you want to stake, i.e. 0:0sdf0…. Press enter. This will save your address.
+3. After the address saved - press any key.
+4. If you are on the “home screen” of the app and see your address in item 1 - My wallet address (0:0sdf0…) - everything is ok.
+
 
 STEP 2:
-Type 8. Press enter. This will select item 8 - Stake to DePool. Press enter.
-This command will show your address and the depool address and request the amount of tokens you want to stake with further seed phrase verification.
 
-Note
-Please split your stake into two validation cycles, if you consider staking a significant amount of tokens. For example, a total of 250k tokens better to stake in an amount of 125k in two days (24 hours interval).
-In addition, do not leave your balance empty. At least keep 1 TON to be sure you could generate further transactions (withdrawal require balance on the wallet).
+1. Type "8", then press enter. This will select item 8 - Stake to DePool. Press enter.
+2. This command will show your address and the depool address and request the amount of tokens you want to stake with further seed phrase verification.
 
-Enter value in tokens: - here you should type an ordinary amount of tokens, i.e. 125000 for 125k tokens. This is not in nano tokens!). Press enter.
+Note: Please split your stake into two validation cycles, if you consider staking a significant amount of tokens. For example, a total of 250k tokens better to stake in an amount of 125k in two days (24 hours interval).
 
-Enter the seed phrase: - When you enter a seed phrase use one space between words (no dashes or other symbols) and don’t type space after the last word of the seed phrase. Press enter to make a transaction.
-Your seed phrase wouldn't be stored or used and will disappear after transaction.
-Please be patient, it could take some time (less than a minute, but still not immediate) to connect to blockchain and generate the transaction. After everything is done press any key to return to “home screen”.
+Note: In addition, do not leave your balance empty. At least keep 1 TON to be sure you could generate further transactions (withdrawal require balance on the wallet).
 
-STEP 3 (make it in couple of minutes after step 2 to be sure, that everything in blockchain):
-Type 4. Press enter. This will select item  4  - Show wallet balance and stakes.
-You will see the following info:
+3. Enter value in tokens: - here you should type an ordinary amount of tokens, i.e. 125000 for 125k tokens. This is not in nano tokens!. Press enter.
+4. Enter the seed phrase: - When you enter a seed phrase use one space between words (no dashes or other symbols) and don’t type space after the last word of the seed phrase.
+5. Check entered data.
+6. Press enter to make a transaction.
+
+Note: Your seed phrase wouldn't be stored or used and will disappear after transaction.
+
+Note: Please be patient, it could take some time (less than a minute, but still not immediate) to connect to blockchain and generate the transaction. After everything is done press any key to return to “home screen”.
+
+STEP 3: 
+
+1. Make it in couple of minutes after step 2 to be sure, that everything in blockchain.
+2. Type "4", then press enter. This will select item  4  - Show wallet balance and stakes.
+3. You will see the following info:
 Addr:
 0:0sdf0…
  Balance: xxx
@@ -218,6 +226,6 @@ DePool: 0:0000000dead8e176b391df7e6d79e3cf52fa8dbcd457a88220507dde8f6676fe
 
 Press any key to continue …
 
-It means that you have staked in depool! Hurray!
+4. It means that you have staked in depool! Hurray!
 
 See ya in Cyberspace!
