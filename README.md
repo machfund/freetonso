@@ -5,6 +5,7 @@ Thi is the Windows BATCH based tool for the simplest interaction with Free TON b
 
 
 This bundle (FreeTONSO.zip) contains:
+
 tonoscli.exe - official tonos-cli ver. 0.6.2 built from official repository source codes (https://github.com/tonlabs/tonos-cli) for Windows systems.
 
 freetonso.cmd - open source batch script supplied with a convenient menu which helps you to execute more than 12 different tasks.
