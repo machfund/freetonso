@@ -2,9 +2,8 @@
 @echo off
 Title Free TON Simple Operations 
 REM
-REM Just a simple script file for SubGovs and other who find it helpful :)
-REM by @axelfoly in Freeton.one
-REM 2020, December 
+REM Just a simple script file for SubGovs and other who find it helpful
+REM Made in Cyberspace, 2020, December by Axel Foly - @axelfoly in Freeton.one
 REM 
 
 echo Loading...
@@ -167,8 +166,8 @@ for /f %%i in ("account_stakes.tmp") do set size=%%~zi
 if %size% equ 0 (
 	del account_stakes.tmp
 	del account_rewards.tmp
-	tonos-cli run %DEPOOL% getParticipantInfo "{\"addr\":\"%ADDR%\"}" --abi DePool.abi.json 2>nul | find "total">account_stakes.tmp
-	tonos-cli run %DEPOOL% getParticipantInfo "{\"addr\":\"%ADDR%\"}" --abi DePool.abi.json 2>nul | find "reward">account_rewards.tmp
+	tonos-cli run %DEPOOL% getParticipantInfo "{\"addr\":\"%ADDR%\"}" --abi DePoolv2.abi.json 2>nul | find "total">account_stakes.tmp
+	tonos-cli run %DEPOOL% getParticipantInfo "{\"addr\":\"%ADDR%\"}" --abi DePoolv2.abi.json 2>nul | find "reward">account_rewards.tmp
 	)
 
 for /f %%i in ("account_stakes.tmp") do set size=%%~zi
